@@ -2,7 +2,7 @@ package net.zerotodev.api.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-
+// TEST
 @SpringBootApplication
 public class ConsumerApplication {
 

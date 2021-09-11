@@ -10,7 +10,7 @@ import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.stereotype.Service;
 @Service
 public class UserService {
-    @KafkaListener(topics = "kafka-spring-producer", containerFactory = "userKafkaListenerFactory")
+    @KafkaListener(topics = "TOPIC-01", containerFactory = "userKafkaListenerFactory")
     public void listenWithHeaders(
         @Payload User message,
          @Header(KafkaHeaders.RECEIVED_PARTITION_ID) int partition){

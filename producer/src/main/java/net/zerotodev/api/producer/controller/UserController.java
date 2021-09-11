@@ -13,7 +13,7 @@ public class UserController {
 
     private final KafkaTemplate<String, User> kafkaTemplate;
 
-    private static final String TOPIC = "kafka-spring-producer";
+    private static final String TOPIC = "TOPIC-01";
 
     @GetMapping("/publish/{name}")
     public String postMessage(@PathVariable final String name){
